@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Home SubPage</title>
+
+  <style>
+     body {
+      background-color: #B9E5E8;
+      margin: 0px;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column; /* Stack header and content */
+      height: 100vh;
+    }
+    
+     header {
+      position: fixed;
+      display: flex; 
+      align-items: center; 
+      padding: 15px 0 ;
+      width: 100%;
+      background-color:#DFF2EB;
+      position: relative; 
+    }
+
+     .header-text {
+      position: absolute; 
+      left: 35%; 
+      transform: translateX(-50%); 
+      color: #4A628A; 
+      font-size: 40px; 
+      font-weight: bold; 
+    }
+
+      .logo{
+      font-size: 25px;
+      color: gray;
+      font-weight: 800;
+      transition: 0.3s ease;
+      text-decoration: none;
+      margin-left: 5%;
+    }
+
+     .logo:hover, .logo.active{
+      color: rgb(209, 152, 131);
+      text-shadow: 0 0 25px orangered,
+                   0 0 50px orangered;
+      transform: scale(1.1);
+    }
+
+     span{
+      color: #4A628A;
+    }
+
+     nav {
+      display: flex; 
+      align-items: center; 
+      margin-left: auto; 
+    }
+
+     nav a {
+      color: #4A628A;
+      font-size: 23px;
+      text-decoration: none;
+      padding: 10px 15px; 
+      margin: 0 10px; 
+      border-radius: 15px;
+      transition: 0.3s ease;
+    }
+
+     nav a:hover, nav a.active{
+      text-shadow: 0 0 25px orangered,
+                   0 0 50px orangered;
+      transform: scale(1.1);
+    }
+
+     .image-button {
+      display: flex; 
+      align-items: center; 
+      padding: 0; 
+    }
+
+     .image-button img {
+      margin-right: 10px; 
+      mix-blend-mode: multiply;
+    }
+
+     .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      max-width: 100%;
+      margin: auto;
+      gap: 10px;
+      padding: 75px;
+      flex: 1;
+      margin-top: 10px;
+    }
+
+     .box {
+      background-color: #DFF2EB;
+      border: 2px solid #4A628A;
+      border-radius: 15px;
+      padding: 40px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      width: 700px;
+      height: 250px;
+      display: flex;
+      align-items: flex-start; /* Align items to the start */
+      justify-content: space-between; /* Space between items */
+    }
+
+     .box:hover {
+      box-shadow: 0 0 20px pink, 0 0 50px pink; 
+      transition: transform 0.5s;
+      transform: scale(1.05); 
+      background-color: #4A628A;
+      color: white;
+    }
+
+     .box-title {
+      font-size: 35px;
+      font-weight: bold;
+      margin-bottom: 20px; /* Add space below title */
+      margin-top: -30px;
+      margin-left: -10px;
+    } 
+    
+     .box-content {
+      font-size: 26px;
+      max-width: 70%; /* Ensure text doesn't overflow */
+    }
+
+     .box img {
+      max-width: 170px; /* Adjust image size */
+      height: 280px;
+      margin-left: 20px; /* Add some space between text and image */
+      border-radius: 15%;
+      margin-top: -15px;
+    }
+
+     .see-more {
+      background-color: #7AB2D3;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 15px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 10px; /* Add space above the button */
+    }
+
+     .see-more:hover {
+      background-color: pink; /* Change color on hover */
+    }
+  </style>  
+</head>
+
+<body>
+  <header>
+    <div class="header-text">Welcome to My Website</div> 
+
+    <a href="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\Index.html" class="logo active"><span>Aldr</span>ian</a>
+
+    <nav>
+        <a href="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\AboutPage.html" target="_self">About</a>
+        <a href="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\HobbyPage.html" target="_self">Hobby</a>
+        <a href="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\InterestPage.html" target="_self">Interest</a>  
+        <a href="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\AchievementsPage.html" target="_self">Achievements</a>  
+        <a href="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\ContactPage.html" target="_self">Contact</a>
+        <div class="image-button">
+          <a href="https://www.instagram.com/wt_bruhxyz/" target="_blank">
+            <img src="download.jpg" width="25px" height="25" alt="Instagram"/>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100080713831436" target="_blank">
+            <img src="download.png" width="27" height="27" alt="Facebook"/>
+          </a>
+        </div>
+    </nav>
+  </header>
+
+    <div class="container">
+      <div class="box" onclick="location.href='AboutPage.html'" target="_blank">
+        <div class="box-content">
+          <div class="box-title">About</div>
+          <p>Hello, Welcome to my little corner of the Internet!</p>
+          <button class="see-more">See more...</button>
+        </div>
+        <img src="secodpicko.jpg" alt="About Image" />
+      </div>
+
+      <div class="box" onclick="location.href='HobbyPage.html'">  
+        <div class="box-content">
+          <div class="box-title">Hobby</div>
+          <p>Here are some of my hobbies that I pursue in my free time.</p>
+          <button class="see-more">See more...</button>
+        </div>
+        <img src="hobbyimg.jpg" alt="Hobby Image" />
+      </div>
+
+      <div class="box" onclick="location.href='InterestPage.html'">
+        <div class="box-content">
+          <div class="box-title">Interest</div>
+          <p>Explore the vibrant passions that fuel my curiosity and drive my pursuits.</p>
+          <button class="see-more">See more...</button>
+        </div>
+        <img src="pictureko.jpg" alt="Interest Image" />
+      </div>
+
+      <div class="box" onclick="location.href='AchievementsPage.html'">
+        <div class="box-content">
+          <div class="box-title">Achievements</div>
+          <p>This section highlights my key accomplishments and milestones.</p>
+          <button class="see-more">See more...</button>
+        </div>
+        <img src="pictureko.jpg" alt="Achievement Image" />
+      </div>
+    </div>
+
+ </body>
+</html>

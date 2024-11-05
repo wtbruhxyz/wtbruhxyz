@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hobby SubPage Two</title>
+
+    <style>
+       body {
+        background-color: #B9E5E8;
+        margin: 0px;
+        overflow: hidden;
+        position: relative;
+      }
+      
+       header {
+        position: fixed;
+        display: flex; 
+        align-items: center; 
+        padding: 15px 0 ;
+        width: 100%;
+        background-color:#DFF2EB;
+        position: relative; 
+      }
+  
+       .header-text {
+        position: absolute; 
+        left: 35%; 
+        transform: translateX(-50%); 
+        color: #4A628A; 
+        font-size: 40px; 
+        font-weight: bold; 
+      }
+  
+        .logo{
+        font-size: 25px;
+        color: gray;
+        font-weight: 800;
+        transition: 0.3s ease;
+        text-decoration: none;
+        margin-left: 5%;
+      }
+  
+       .logo:hover, .logo.active{
+        color: rgb(209, 152, 131);
+        text-shadow: 0 0 25px orangered,
+                     0 0 50px orangered;
+        transform: scale(1.1);
+      }
+  
+       span{
+        color: #4A628A;
+      }
+  
+       nav {
+        display: flex; 
+        align-items: center; 
+        margin-left: auto; 
+      }
+  
+       nav a {
+        color: #4A628A;
+        font-size: 23px;
+        text-decoration: none;
+        padding: 10px 15px; 
+        margin: 0 10px; 
+        border-radius: 15px;
+        transition: 0.3s ease;
+      }
+  
+       nav a:hover, nav a.active{
+        text-shadow: 0 0 25px orangered,
+                     0 0 50px orangered;
+        transform: scale(1.1);
+      }
+  
+       .image-button {
+        display: flex; 
+        align-items: center; 
+        padding: 0; 
+      }
+  
+       .image-button img {
+        margin-right: 10px; 
+        mix-blend-mode: multiply;
+      }
+  
+      .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: auto;
+    gap: 70px;
+    padding: 75px;
+    flex: 1;
+    margin-top: 20px;
+}
+
+.box {
+    background-color: #DFF2EB;
+    border: 2px solid #4A628A;
+    border-radius: 15px;
+    padding: 20px; 
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.box:hover {
+    box-shadow: 0 0 20px pink, 0 0 50px pink; 
+    transition: transform 0.5s;
+    transform: scale(1.05); 
+    background-color: #4A628A;
+    color: white;
+}
+
+.box-title {
+    font-size: auto; 
+    font-weight: bold;
+    text-align: center; 
+    margin-top: -10px;
+    margin-bottom: 8px;
+}
+  </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="header-text">Welcome to My Website</div> 
+    
+          <a href="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\Index.html" class="logo" target="_self"><span>Aldr</span>ian</a>
+    
+        <nav>
+            <a href="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\AboutPage.html" target="_self">About</a>
+            <a href="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\HobbyPage.html" class="active" target="_self">Hobby</a>
+            <a href="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\InterestPage.html" target="_self">Interest</a>  
+            <a href="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\AchievementsPage.html" target="_self">Achievements</a>  
+            <a href="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\ContactPage.html" target="_self">Contact</a>
+          
+            <div class="image-button">
+              <a href="https://www.instagram.com/wt_bruhxyz/" target="_blank">
+                <img src="download.jpg" width="25px" height="25" alt="Instagram"/>
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=100080713831436" target="_blank">
+                <img src="download.png" width="27" height="27" alt="Facebook"/>
+              </a>
+            </div>
+        </nav>
+      </header>
+
+      <div class="container">
+        <div class="box">
+            <div class="box-title">Inner Child - Toneejay</div>
+            <audio controls autoplay loop>
+                <source src="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\music\TONEEJAY - Inner Child (Official Lyric Video).mp3">
+            </audio>
+        </div>
+    
+        <div class="box">  
+            <div class="box-title">Happiness - Rex Orange County</div>
+            <audio controls autoplay loop>
+                <source src="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\music\Rex Orange County - Happiness (Lyrics).mp3">
+        </div>
+        
+        <div class="box">
+            <div class="box-title">Best Friend - Rex Orange County</div>
+            <audio controls autoplay loop>
+                <source src="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\music\Rex Orange County - Best Friend (Official Audio).mp3">
+        </div>
+
+        <div class="box">
+            <div class="box-title">Here With Me - d4vd</div>
+            <audio controls autoplay loop>
+                <source src="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\music\d4vd - Here With Me (Official Audio).mp3">
+        </div>
+    
+        <div class="box" >  
+            <div class="box-title">Birds Of A Feather - Billie Eilish</div>
+            <audio controls autoplay loop>
+                <source src="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\music\Billie Eilish - BIRDS OF A FEATHER (Official Music Video).mp3">
+        </div>
+        
+        <div class="box" >
+            <div class="box-title">Labyrinth - Taylor Swift</div>
+            <audio controls autoplay loop>
+                <source src="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\music\Taylor Swift - Labyrinth (Lyrics).mp3">
+        </div>
+
+        <div class="box" >
+            <div class="box-title">August - Taylor Swift</div>
+            <audio controls autoplay loop>
+                <source src="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\music\Taylor Swift  august (Official Lyric Video).mp3">
+        </div>
+
+        <div class="box" >
+            <div class="box-title">Daylight - Taylor Swift</div>
+            <audio controls autoplay loop>
+                <source src="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\music\Taylor Swift - Daylight (Official Audio).mp3">
+        </div>
+
+        <div class="box" >
+            <div class="box-title">Daylight - David Kushner</div>
+            <audio controls autoplay loop>
+                <source src="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\music\David Kushner - Daylight.mp3">
+        </div>
+
+        <div class="box" >
+            <div class="box-title">Say You Won't let go - James Arthur</div>
+            <audio controls autoplay loop>
+                <source src="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\music\James Arthur - Say You Won't Let Go (Lyrics).mp3">
+        </div>
+
+        <div class="box" >
+            <div class="box-title">Photograph - Ed Sheeran</div>
+            <audio controls autoplay loop>
+                <source src="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\music\Photograh.mp3">
+        </div>
+
+        <div class="box" >
+            <div class="box-title">Can I Be Him - James Arthur</div>
+            <audio controls autoplay loop>
+                <source src="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\music\James Arthur - Can I Be Him (Lyrics).mp3">
+        </div>
+
+        <div class="box" >
+            <div class="box-title">13 - LANY</div>
+            <audio controls autoplay loop>
+                <source src="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\music\13 - LANY (Lyrics).mp3">
+        </div>
+
+        <div class="box" >
+            <div class="box-title">ILYSB - LANY </div>
+            <audio controls autoplay loop>
+                <source src="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\music\LANY - ILYSB (Official Lyric Video).mp3">
+        </div>
+
+        <div class="box" >
+            <div class="box-title">24/7, 356 - Elijah Woods</div>
+            <audio controls autoplay loop>
+                <source src="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\music\elijah woods - 247, 365 (Lyrics).mp3">
+        </div>
+
+        <div class="box" >
+            <div class="box-title">Style - Taylor Swift</div>
+            <audio controls autoplay loop>
+                <source src="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\music\Taylor Swift - Style.mp3">
+        </div>
+    </div>
+
+</body>
+</html>
