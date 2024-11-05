@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Home Page</title>
+
+  <style>
+     body {
+      background-color: #B9E5E8;
+      margin: 0px;
+      overflow: hidden;
+      position: relative;
+    }
+    
+     header {
+      position: fixed;
+      display: flex; 
+      align-items: center; 
+      padding: 15px 0 ;
+      width: 100%;
+      background-color:#DFF2EB;
+      position: relative; 
+    }
+
+     .header-text {
+      position: absolute; 
+      left: 35%; 
+      transform: translateX(-50%); 
+      color: #4A628A; 
+      font-size: 40px; 
+      font-weight: bold; 
+    }
+
+     .logo{
+      font-size: 25px;
+      color: gray;
+      font-weight: 800;
+      transition: 0.3s ease;
+      text-decoration: none;
+      margin-left: 5%;
+    }
+
+     .logo:hover, .logo.active{
+      color: #4A628A;
+      text-shadow: 0 0 25px orangered,
+                   0 0 50px orangered;
+      transform: scale(1.1);
+    }
+
+     span{
+      color: #4A628A;
+    }
+
+     nav {
+      display: flex; 
+      align-items: center; 
+      margin-left: auto; 
+    }
+
+     nav a {
+      color: #4A628A;
+      font-size: 23px;
+      text-decoration: none;
+      padding: 10px 15px; 
+      margin: 0 10px; 
+      border-radius: 15px;
+      transition: 0.3s ease;
+    }
+
+     nav a:hover, nav a.active{
+      text-shadow: 0 0 25px orangered,
+                   0 0 50px orangered;
+      transform: scale(1.1);
+    }
+
+     .image-button {
+      display: flex; 
+      align-items: center; 
+      padding: 0; 
+    }
+
+     .image-button img {
+      margin-right: 10px; 
+      mix-blend-mode: multiply;
+    }
+
+     .home{
+      width: 100%;
+      min-height: calc (100vh - 80px);    
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5cm;
+      padding: 30px 12%;
+      box-sizing: border-box;
+    }
+
+     .home-content{
+      max-width: 800px;
+    }
+
+     .home-content h3{
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+     .home-content h1{
+      font-size: 62px;
+      margin-top: 0;
+    }
+
+     .img-box img{
+      border-radius: 50%;
+      width: 500px;
+      height: auto;
+      transition: box-shadow 0.5 ease;
+    }
+
+    .img-box img:hover {
+      box-shadow: 0 0 20px pink, 0 0 50px pink; 
+    }
+
+     .image-hov:hover img {
+      transition: transform 0.5s;
+      transform: scale(1.05); 
+    }
+
+    .splatter {
+      position: absolute;
+      width: 150px; 
+      height: 150px;
+      border-radius: 50%;
+      opacity: 0.5; 
+      pointer-events: none; 
+      background: radial-gradient(circle, pink 1%, rgba(255,255,255,0) 70%);
+    }
+
+     .splatter1 { top: 5%; left: 5%; transform: rotate(30deg); }
+     .splatter2 { top: 5%; right: 5%; transform: rotate(60deg); }
+     .splatter3 { bottom: 5%; left: 5%; transform: rotate(90deg); }
+     .splatter4 { bottom: 5%; right: 5%; transform: rotate(120deg); }
+     .splatter5 { top: 50%; left: 25%; transform: rotate(150deg); }
+     .splatter6 { top: 50%; right: 7%; transform: rotate(160deg); }
+     .splatter7 { top: 10%; right: 50%; transform: rotate(180deg); }
+     .splatter8 { bottom: 10%; right: 50%; transform: rotate(180deg); }
+
+  </style>  
+</head>
+
+<body>
+  <header>
+    <div class="header-text">Welcome to My Website</div> 
+
+      <a href="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\HomePage.html" class="logo active" target="_self"><span>Aldr</span>ian</a>
+
+    <nav> 
+        <a href="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\AboutPage.html" target="_self">About</a>
+        <a href="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\HobbyPage.html" target="_self">Hobby</a>
+        <a href="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\InterestPage.html" target="_self">Interest</a>  
+        <a href="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\AchievementsPage.html" target="_self">Achievements</a>  
+        <a href="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\ContactPage.html" target="_self">Contact</a>
+      
+        <div class="image-button">
+          <a href="https://www.instagram.com/wt_bruhxyz/" target="_blank">
+            <img src="download.jpg" width="25px" height="25" alt="Instagram"/>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100080713831436" target="_blank">
+            <img src="download.png" width="27" height="27" alt="Facebook"/>
+          </a>
+        </div>
+    </nav>
+  </header>
+
+  <section class="home">
+      <div class="home-content">
+        <h3>Hi</h3>
+
+        <h1>I'm <span>Aldrian<br></span>
+          an Information Technology<br>
+          Student</h1>
+      </div>
+
+      <div class="img-box">
+        <a href="C:\Users\aiddr\Documents\HTML_Aldrian\.vscode\HomeSubPage.html" class="image-hov" target="_self">
+        <img src="pictureko.jpg" alt="image">
+        </a>
+      </div>
+  </section>
+  
+  <div class="splatter splatter1"></div>
+  <div class="splatter splatter2"></div>
+  <div class="splatter splatter3"></div>
+  <div class="splatter splatter4"></div>
+  <div class="splatter splatter5"></div>
+  <div class="splatter splatter6"></div>
+  <div class="splatter splatter7"></div>
+  <div class="splatter splatter8"></div>
+
+
+ </body>
+</html>
+
